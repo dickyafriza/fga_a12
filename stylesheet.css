@@ -21,3 +21,68 @@ li {
   float: left;
   padding: 33px 20px;
 }
+
+.team-section {
+  background-color: #284b63;
+  color: white;
+  min-height: 110vh;
+  border: 1px solid #284b63;
+}
+.team-title {
+  /* margin-top: 10%; */
+  text-align: center;
+  font-size: 30px;
+}
+
+.team-desc {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.foto-list {
+  display: grid;
+  gap: 20px;
+}
+
+.atas {
+  margin-top: 5%;
+  margin-bottom: 20px;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+}
+
+.bawah {
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+}
+
+.overlay-img {
+  display: inline-block;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.overlay-text {
+  background-color: white;
+  opacity: 0;
+  top: 40%;
+  width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  transition: opacity 0.5s;
+  text-align: center;
+  color: #284b63;
+  font-weight: 700;
+}
+
+.overlay-img:hover .overlay-text {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.overlay-img:hover .foto-anggota {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
