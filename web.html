@@ -20,21 +20,19 @@
       </div>
     </div>
 
-    <div class="main">
-      <div class="team-section">
+    <section class="main">
+      <section class="team-section">
         <div class="team-title">
           <h1>OUR TEAM</h1>
         </div>
         <h1 class="team-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, facere
-          rerum! Necessitatibus, delectus iure? Aperiam beatae cum,
-          <br />commodi temporibus voluptatibus quas nihil, deleniti sed
-          voluptates dolores debitis itaque dolorem! Voluptates!
+          Anggota tim berasal dari peserta FGA Progate Front End Developer
+          <br />Dicky | Rizqi | Reza | Shidan | Fikri
         </h1>
         <div class="foto-list atas">
           <div class="overlay-img">
             <img
-              src="https://kprofiles.com/wp-content/uploads/2019/01/Yeji-534x800.jpeg"
+              src="./src/assets/afriza.jpg"
               alt="Dicky"
               width="200px"
               height="200px"
@@ -44,7 +42,7 @@
           </div>
           <div class="overlay-img">
             <img
-              src="https://kprofiles.com/wp-content/uploads/2019/01/Lia-534x800.jpeg"
+              src="./src/assets/rizqi.jpg"
               alt="Rizqi"
               width="200px"
               height="200px"
@@ -54,7 +52,7 @@
           </div>
           <div class="overlay-img">
             <img
-              src="https://kprofiles.com/wp-content/uploads/2019/01/Ryujin-534x800.jpeg"
+              src="./src/assets/reza.jpeg"
               alt="Reza"
               width="200px"
               height="200px"
@@ -66,7 +64,7 @@
         <div class="foto-list bawah">
           <div class="overlay-img">
             <img
-              src="https://kprofiles.com/wp-content/uploads/2019/01/Chaeryeong-534x800.jpeg"
+              src="./src/assets/shidan.jpg"
               alt="Shidan"
               width="200px"
               height="200px"
@@ -76,7 +74,7 @@
           </div>
           <div class="overlay-img">
             <img
-              src="https://kprofiles.com/wp-content/uploads/2019/01/Yuna-534x800.jpeg"
+              src="./src/assets/fikri.jpg"
               alt="Fikri"
               width="200px"
               height="200px"
@@ -85,13 +83,108 @@
             <div class="overlay-text">M. Nurul Fikri</div>
           </div>
         </div>
-      </div>
+      </section>
 
+      <section class="pricing-section">
+        <div class="pricing-title">
+          <h1>PRICING TABLES</h1>
+        </div>
+        <div class="pricing-tables">
+          <div class="table">
+            <div class="title">
+              Toyota CHR Hybrid<br /><span>Rp 563,04 juta</span>
+            </div>
+            <div class="col-odd">1.8L Petrol Engine</div>
+            <div class="col-even">4 Cylinder 16 Valve DOHC</div>
+            <div class="col-odd">Bensin</div>
+            <div class="col-even">Manual</div>
+            <div class="col-odd">4,36 x 1,8 x 1,57</div>
+            <button class="order order-1" onclick="orderHandler('CHR')">
+              ORDER NOW
+            </button>
+          </div>
+          <div class="table">
+            <div class="title">Toyota Voxy<br /><span>Rp 558,2 juta</span></div>
+            <div class="col-odd">2.0L Petrol Engine</div>
+            <div class="col-even">4 Cylinder 16 Valve</div>
+            <div class="col-odd">Bensin</div>
+            <div class="col-even">CVT</div>
+            <div class="col-odd">4,7 x 1,73 x 1,86</div>
+            <button class="order order-2" onclick="orderHandler('Voxy')">
+              ORDER NOW
+            </button>
+          </div>
+          <div class="table">
+            <div class="title">
+              Toyota Camry<br /><span>Rp 657,05 juta</span>
+            </div>
+            <div class="col-odd">2.5L Petrol Engine</div>
+            <div class="col-even">In-line 4 Cylinder 16 Valve</div>
+            <div class="col-odd">Bensin</div>
+            <div class="col-even">Manual</div>
+            <div class="col-odd">4,89 x 1,84 x 1,45</div>
+            <button class="order order-3" onclick="orderHandler('Camry')">
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimoni-section">
+        <div class="testimoni-title">
+          <h1>TESTIMONIALS</h1>
+        </div>
+        <div class="user-testimoni fade">
+          <img
+            src="./src/assets/testi-1.png"
+            alt="comment1"
+            width="200px"
+            height="200px"
+          />
+          <div class="text-comment">
+            CHAEWON<br /><br /><span>"Mobilnya keren!<br />ada bannya"</span>
+          </div>
+        </div>
+        <div class="user-testimoni fade">
+          <img
+            src="./src/assets/testi-2.png"
+            alt="comment2"
+            width="200px"
+            height="200px"
+          />
+          <div class="text-comment">
+            SAKURA<br /><br /><span>"Mobilnya asik!<br />ada stirnya"</span>
+          </div>
+        </div>
+        <div class="user-testimoni fade">
+          <img
+            src="./src/assets/testi-3.png"
+            alt="comment3"
+            width="200px"
+            height="200px"
+          />
+          <div class="text-comment">
+            YENA<br /><br /><span>"Hemat bahan<br />bakar mantap!"</span>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
       <!-- silahkan diisi codingannya main @Reza .F-->
-    </div>
+    </section>
     <div class="footer">
       <!-- silahkan diisi codingannya footer @Fikri -->
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
 
