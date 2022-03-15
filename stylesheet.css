@@ -8,7 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar{
+.navbar {
   background-color: #119e99;
   color: #fff;
   display: flex;
@@ -16,41 +16,39 @@ body {
   align-items: center;
 }
 
-.nav-list{
+.nav-list {
   list-style-type: none;
 }
 
-.nav-logo{
-font-size: 20px;
+.nav-logo {
+  font-size: 20px;
 }
 
-.nav-list .list-item{
+.nav-list .list-item {
   display: inline-block;
   padding: 20px 10px;
   font-size: 20px;
 }
 
-.navbar a{
+.navbar a {
   color: rgb(196, 190, 190);
   text-decoration: none;
 }
 
-
-.navbar a:hover{
+.navbar a:hover {
   color: rgb(255, 255, 255);
 }
 
-.menu-line{
+.menu-line {
   width: 20px;
   height: 3px;
-  background-color:white;
+  background-color: white;
   margin-bottom: 4px;
 }
 
-.menu{
-display: none;
+.menu {
+  display: none;
 }
-
 
 /* OUR TEAM CSS */
 .team-section {
@@ -96,6 +94,18 @@ display: none;
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .atas {
+    grid-template-columns: 80%;
+    justify-items: center;
+  }
+
+  .bawah {
+    grid-template-columns: 80%;
+    justify-items: center;
+  }
+}
+
 .overlay-img {
   display: inline-block;
   position: relative;
@@ -128,7 +138,6 @@ display: none;
 /* PRICING CSS */
 .pricing-section {
   min-height: 550px;
-
 }
 
 .pricing-title {
@@ -147,14 +156,13 @@ display: none;
 .pricing-tables {
   display: flex;
   justify-content: center;
-  
 }
-@media screen and(max-width:600px){
-  .pricing-tables{
+@media screen and (max-width: 600px) {
+  .pricing-tables {
     display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
   }
-  
-  
 }
 .table {
   margin: 10px;
@@ -213,6 +221,12 @@ display: none;
   height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .testimoni-section {
+    height: 450px;
+  }
+}
+
 .testimoni-title {
   text-align: center;
   font-size: 30px;
@@ -225,6 +239,13 @@ display: none;
   margin: 3% auto;
   margin-bottom: 7%; /* bawas testi ke img */
   border-bottom: 5px solid white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .testimoni-title h1 {
+    width: 50%;
+  }
 }
 
 .user-testimoni {
@@ -274,6 +295,12 @@ display: none;
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .text-comment {
+    font-size: 12px;
+  }
+}
+
 .text-comment span {
   font-style: italic;
 }
@@ -295,6 +322,14 @@ display: none;
   background-color: #3c6e71;
 }
 
+@media screen and (max-width: 600px) {
+  .dot {
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
