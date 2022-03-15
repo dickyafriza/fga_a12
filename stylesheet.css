@@ -410,7 +410,7 @@ select {
 }
 
 .contact-submit {
-  width: 91%;
+  width: 74%;
   padding: 10px 0;
   margin-bottom: 20px;
   background-color: #284b63;
@@ -421,7 +421,7 @@ select {
 
 .notice {
   margin: 10px 0;
-  margin-right: 71%;
+  margin-right: 57%;
   color: #353535;
 }
 
