@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  background-color: #119e99;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list{
+  list-style-type: none;
+}
+
+.nav-logo{
+font-size: 20px;
+}
+
+.nav-list .list-item{
+  display: inline-block;
+  padding: 20px 10px;
+  font-size: 20px;
+}
+
+.navbar a{
+  color: rgb(196, 190, 190);
+  text-decoration: none;
+}
+
+
+.navbar a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.menu-line{
+  width: 20px;
+  height: 3px;
+  background-color:white;
+  margin-bottom: 4px;
+}
+
+.menu{
+display: none;
+}
+
+
+/* OUR TEAM CSS */
+.team-section {
+  background-color: #284b63;
+  color: white;
+  min-height: 100%;
+  border: 1px solid #284b63;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.team-title h1 {
+  width: 20%;
+  margin: 3% auto;
+  padding-bottom: 1%;
+  border-bottom: 5px solid white;
+}
+
+.team-desc {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.foto-list {
+  display: grid;
+  gap: 20px;
+}
+
+.atas {
+  margin-top: 5%;
+  margin-bottom: 20px;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;
+}
+
+.bawah {
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+}
+
+.overlay-img {
+  display: inline-block;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.overlay-text {
+  background-color: white;
+  opacity: 0;
+  top: 70%;
+  width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  transition: opacity 0.5s;
+  text-align: center;
+  color: #284b63;
+  font-weight: 700;
+}
+
+.overlay-img:hover .overlay-text {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.overlay-img:hover .foto-anggota {
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+/* PRICING CSS */
+.pricing-section {
+  height: 550px;
+
+}
+
+.pricing-title {
+  text-align: center;
+  font-size: 30px;
+  color: #353535;
+}
+
+.pricing-title h1 {
+  width: 30%;
+  margin: 3% auto;
+  padding-bottom: 1%;
+  border-bottom: 5px solid #353535;
+}
+
+.pricing-tables {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  margin: 10px;
+}
+
+.table .title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #353535;
+  font-weight: 700;
+  color: white;
+  padding: 10px 0;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.table .title span {
+  background-color: #3c6e71;
+  padding: 5px 20px;
+  font-weight: normal;
+  border-radius: 50px;
+}
+
+.table div {
+  text-align: center;
+  width: 300px;
+  padding: 10px 0;
+  color: #353535;
+}
+
+.table .col-even {
+  background-color: #d9d9d9;
+}
+
+.table .order {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #353535;
+  font-weight: 700;
+  width: 300px;
+  padding: 10px 0;
+  color: white;
+  border: none;
+}
+
+.table .order:hover {
+  background-color: #3c6e71;
+}
+
+/* TESTI CSS */
+.testimoni-section {
+  background-image: url("./src/assets/toyota-bg.jpeg");
+  background-size: cover;
+  padding-top: 1px;
+  position: relative;
+  height: 100%;
+}
+
+.testimoni-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.testimoni-title h1 {
+  margin-top: 50px;
+  color: white;
+  width: 35%;
+  margin: 3% auto;
+  margin-bottom: 7%; /* bawas testi ke img */
+  border-bottom: 5px solid white;
+}
+
+.user-testimoni {
+  display: none;
+}
+
+.user-testimoni img {
+  border-radius: 50%;
+  margin: 10px calc(50% - 100px);
+  margin-bottom: 5%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #353535;
+}
+
+.text-comment {
+  color: #353535;
+  font-size: 25px;
+  background-color: #d9d9d9;
+  margin: 0 35%;
+  position: absolute;
+  width: 30%;
+  padding: 1%;
+  text-align: center;
+}
+
+.text-comment span {
+  font-style: italic;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 5px;
+  margin-top: 15%;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #3c6e71;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-form {
+  background-color: #dddddd;
+  padding-top: 100px;
+}
+
+input,
+textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.contents-item img {
+  height: 500px;
+  width: 500px;
+}
+
+.contact-submit {
+  background-color: #dee7ec;
+  color: #889eab;
+  border: 1px solid #dee7ec;
+}
+
+.copy-container h1 {
+  font-size: 140px;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
