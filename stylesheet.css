@@ -1,36 +1,62 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Avenir Next";
-}
-li {
-  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-  background-color: #26d0c9;
+.navbar{
+  background-color: #119e99;
   color: #fff;
-  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.header-logo {
-  float: left;
-  font-size: 36px;
-  padding: 20px 40px;
+.nav-list{
+  list-style-type: none;
 }
 
-.header-list li {
-  float: left;
-  padding: 33px 20px;
+.nav-logo{
+font-size: 20px;
 }
+
+.nav-list .list-item{
+  display: inline-block;
+  padding: 20px 10px;
+  font-size: 20px;
+}
+
+.navbar a{
+  color: rgb(196, 190, 190);
+  text-decoration: none;
+}
+
+
+.navbar a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.menu-line{
+  width: 20px;
+  height: 3px;
+  background-color:white;
+  margin-bottom: 4px;
+}
+
+.menu{
+display: none;
+}
+
 
 /* OUR TEAM CSS */
 .team-section {
   background-color: #284b63;
   color: white;
-  min-height: 110vh;
+  min-height: 100%;
   border: 1px solid #284b63;
 }
 
@@ -102,6 +128,7 @@ li {
 /* PRICING CSS */
 .pricing-section {
   height: 550px;
+
 }
 
 .pricing-title {
@@ -176,7 +203,7 @@ li {
   background-size: cover;
   padding-top: 1px;
   position: relative;
-  height: 110vh;
+  height: 100%;
 }
 
 .testimoni-title {
