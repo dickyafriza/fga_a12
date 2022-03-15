@@ -178,7 +178,7 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 		
-	<div class="contents">
+	  <div class="contents">
         <h3>Our Toyota Car Advertisment</h3>
         <div class="contents-item">
           <img src="./src/banner/1.png">
@@ -194,7 +194,9 @@
           <p>Family Friend</p>
         </div>
       </div>
-		
+	</section>
+	
+	<section>
 	  <div class="contact-form">
         <h3 class="section-title">Hubungi kami untuk reservasi Mobil favoritmu!!!</h3>
         <p>Email (Wajib Diisi)</p>
@@ -208,7 +210,8 @@
 		
         <p>pastikan data Benar dan sesuai</p>
 		<input class="contact-submit" type="submit" value="Kirim">
-      </section>
+	  </div>
+    </section>
       <!-- silahkan diisi codingannya main @Reza .F-->
     </section>
       
