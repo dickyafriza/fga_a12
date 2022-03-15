@@ -357,11 +357,69 @@ body {
 }
 
 .contact-form {
-  background-color: #dddddd;
-  padding-top: 100px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0 100px; */
+  /* padding-top: 100px; */
 }
 
-input,
+.contact-form h1 {
+  margin-top: 50px;
+  font-size: 30px;
+  color: #353535;
+  /* width: 35%; */
+  margin-bottom: 7%; /* bawas testi ke img */
+  border-bottom: 5px solid #353535;
+  text-align: center;
+}
+
+.keluhan {
+  display: flex;
+}
+
+.kiri {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.kiri input,
+select {
+  margin-top: 10px;
+  width: 95%;
+  height: 30px;
+}
+
+.kanan {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.kanan textarea {
+  margin-top: 10px;
+  height: 100%;
+}
+
+.contact-submit {
+  width: 91%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-color: #284b63;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.notice {
+  margin: 10px 0;
+  margin-right: 71%;
+  color: #353535;
+}
+
+/* input,
 textarea {
   width: 400px;
   margin-top: 10px;
@@ -392,4 +450,4 @@ textarea {
 
 .copy-container span {
   color: #ff4a4a;
-}
+} */
