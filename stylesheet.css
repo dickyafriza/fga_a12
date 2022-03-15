@@ -172,7 +172,7 @@ li {
 
 /* TESTI CSS */
 .testimoni-section {
-  background-image: url("./assets/toyota-bg.jpeg");
+  background-image: url("./src/assets/toyota-bg.jpeg");
   background-size: cover;
   padding-top: 1px;
   position: relative;
@@ -292,7 +292,8 @@ li {
   padding-top: 100px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 400px;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -302,11 +303,9 @@ input, textarea {
 }
 
 .contents-item img {
-	height: 500px;
-	width: 500px;
-	
+  height: 500px;
+  width: 500px;
 }
-
 
 .contact-submit {
   background-color: #dee7ec;
@@ -324,3 +323,4 @@ input, textarea {
 
 .copy-container span {
   color: #ff4a4a;
+}

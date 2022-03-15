@@ -10,14 +10,14 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlide(n) {
+const plusSlide = (n) => {
   showSlides((slideIndex += n));
-}
+};
 
 // Thumbnail image controls
-function currentSlide(n) {
+const currentSlide = (n) => {
   showSlides((slideIndex = n));
-}
+};
 
 function showSlides(n) {
   const slides = document.getElementsByClassName("user-testimoni");
