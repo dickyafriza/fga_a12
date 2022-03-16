@@ -21,7 +21,7 @@ body {
 }
 
 .nav-logo {
-  font-size: 20px;
+  height: 50px;
 }
 
 .nav-list .list-item {
@@ -439,6 +439,19 @@ select {
     width: 75%;
   }
 }
+
+/* Footer */
+.footer-section{
+  background-color: #353535;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-section h3{
+  font-size: 30px;
+}
+
 /* input,
 textarea {
   width: 400px;
