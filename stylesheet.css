@@ -25,9 +25,9 @@ body {
 }
 
 .nav-list .list-item {
-  display: inline-block;
-  padding: 20px 10px;
-  font-size: 20px;
+  
+  padding: 10px 10px;
+  font-size: 10px;
 }
 
 .navbar a {
@@ -37,6 +37,37 @@ body {
 
 .navbar a:hover {
   color: rgb(255, 255, 255);
+}
+/* banner */
+.slider .slick-slide {
+  border: solid 1px #000;
+}
+
+.slider .slick-slide img {
+  width: 100%;
+}
+
+
+/* enlarge dots and change their colors */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #dedede;
+}
+
+/* hide dots and arrow buttons when slider is not hovered */
+.slider:not(:hover) .slick-arrow,
+.slider:not(:hover) .slick-dots {
+  opacity: 0;
+}
+/* transition effects for opacity */
+.slick-arrow,
+.slick-dots {
+  transition: opacity 0.5s ease-out;
 }
 
 .menu-line {
@@ -441,14 +472,14 @@ select {
 }
 
 /* Footer */
-.footer-section{
+.footer-section {
   background-color: #353535;
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 
-.footer-section h3{
+.footer-section h3 {
   font-size: 30px;
 }
 

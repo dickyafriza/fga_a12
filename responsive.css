@@ -1,41 +1,37 @@
-
 /* Tampilan Tablet */
 @media screen and(max-width: 1000px) {
-   
 }
 
 /* Tampilan Mobile */
-@media screen and(max-width: 600px) {
-    .menu{
-        display: block;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-    }
-    .navbar{
-        flex-direction: column;
+@media screen and(max-width: 650px) {
+  .menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-list {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding: 8px;
+    display: none;
+  }
 
-    }
-    .nav-list{
-        width: 100%;
-        text-align: center;
-        padding-top: 20px;
-        padding: 10px;
-        display: none;
-    }
+  .nav-list .list-item {
+    display: block;
+    border-top: 1px solid white;
+  }
+  .nav-logo {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 
-    .nav-list .list-item{
-        display: block;
-        border-top: 1px solid white;
-        
-    }
-    .nav-logo{
-        width: 100%;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-   .nav-list .active{
-        display: block;
-    }
+  .nav-list .active {
+    display: block;
+  }
 }
